@@ -18,10 +18,6 @@
                 <router-link to="/#contact">
                     <li @click='close()'>Contact</li>
                 </router-link>
-                <router-link to="/#footer">
-                    <li @click='close()'>Info</li>
-                </router-link>
-
             </ul>
         </div>
     </nav>
