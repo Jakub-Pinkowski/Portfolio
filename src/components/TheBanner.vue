@@ -2,12 +2,8 @@
     <div class="banner d-flex flex-column justify-center align-items-center  ">
 
         <div class="intro">
-            <p class="ma-0 pa-0">Introducting</p>
-            <h1 class="heading ma-0 pa-0 "> Neva Portfolio </h1>
-            <h2 class="secondary-text"> Minimal and <span> Modern </span> theme for Portfolios and Landing pages </h2>
-            <v-btn color="accent" outlined class="btn my-8">
-                View more
-            </v-btn>
+            <h1 class="heading ma-0 pa-0 "> Jakub Pinkowski </h1>
+            <h2 class="secondary-text"> Self-taught Web Developer </h2>
         </div>
     </div>
 </template>
@@ -23,6 +19,8 @@
 }
 
 .intro {
+    
+    margin-top: 10em;
 
     p {
         margin-left: 10px;
@@ -52,6 +50,13 @@
         padding: 0px;
         font-size: 4em;
         color: var(--highlight-color);
+    }
+
+    h2 {
+        margin-top: 1em;
+        padding: 0px;
+        font-size: 2em;
+        color: var(--gray);
     }
 
 }

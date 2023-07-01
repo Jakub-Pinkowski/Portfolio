@@ -1,5 +1,5 @@
 <template>
-    <TheNagivation></TheNagivation>
+    <TheNagivation id="nav"></TheNagivation>
     <TheBanner></TheBanner>
 </template>
 
@@ -8,3 +8,9 @@ import TheNagivation from './components/TheNavigation.vue'
 import TheBanner from './components/TheBanner.vue'
 </script>
 
+<style scoped >
+#nav {
+    position: fixed;
+    z-index: 4;
+}
+</style>
