@@ -1,10 +1,10 @@
 <template>
     <TheNagivation></TheNagivation>
-    <RouterView />
+    <TheBanner></TheBanner>
 </template>
 
 <script setup>
-import { RouterView } from 'vue-router'
 import TheNagivation from './components/TheNavigation.vue'
+import TheBanner from './components/TheBanner.vue'
 </script>
 

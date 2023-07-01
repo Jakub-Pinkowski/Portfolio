@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import App from '../App.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -7,9 +7,10 @@ const router = createRouter({
         {
             path: '/',
             name: 'home',
-            component: HomeView,
+            component: App,
             title: 'home',
         },
+        { path: '/:pathMatch(.*)*', redirect: '/' },
     ],
 });
 
