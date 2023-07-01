@@ -1,6 +1,6 @@
 <template>
     <div>
-        About Projects!
+        About Contacts!
     </div>
 </template>
 
