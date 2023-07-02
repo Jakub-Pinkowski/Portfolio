@@ -26,7 +26,8 @@
 <style lang="scss" scoped > #about {
      padding-left: 10%;
      display: flex;
-     margin-top: 3em;
+     margin-top: 7em;
+     margin-bottom: 7em;
 
      h2 {
          text-transform: uppercase;
