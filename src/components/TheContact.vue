@@ -13,16 +13,61 @@
                 </p>
             </div>
             <div class="form-container">
-                <form>
-                    <input type="text" name="name" id="name" placeholder="Name" required>
-                    <input type="email" name="email" id="email" placeholder="E-mail" required>
-                    <textarea name="message" id="message" cols="20" rows="5" placeholder="Message" required></textarea>
+                <form @submit.prevent="submitForm">
+                    <input type="text" name="name" id="name" placeholder="Name" required v-model="name">
+                    <input type="email" name="email" id="email" placeholder="E-mail" required v-model="email">
+                    <textarea name="message" id="message" cols="20" rows="5" placeholder="Message" required
+                        v-model="message"></textarea>
                     <button class="btn btn-sm btn-outline-secondary" type="submit">Submit</button>
                 </form>
             </div>
         </div>
     </div>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const name = ref('')
+const email = ref('')
+const message = ref('')
+
+const submitForm = () => {
+    // Send the datea to the Firebase server
+    const url = 'https://portfolio-e1f1f-default-rtdb.europe-west1.firebasedatabase.app/'
+
+    const formData = {
+        name: name.value,
+        email: email.value,
+        message: message.value
+    }
+
+    fetch(url + 'contact.json', {
+        method: 'POST',
+        body: JSON.stringify(formData)
+    })
+
+        // Check if the response was okay
+        .then(response => {
+            if (response.ok) {
+                alert('Your message has been sent!')
+                resetForm()
+            } else {
+                alert('Something went wrong. Please try again later.')
+            }
+        })
+
+    const resetForm = () => {
+        name.value = ''
+        email.value = ''
+        message.value = ''
+    };
+
+
+
+}
+
+</script>
 
 <style lang="scss" scoped > #contact {
      padding-left: 10%;
@@ -74,7 +119,7 @@
              padding: 0.5em;
              border: 1px solid var(--dark-accent);
              border-radius: 5px;
-                
+
          }
 
          button {
