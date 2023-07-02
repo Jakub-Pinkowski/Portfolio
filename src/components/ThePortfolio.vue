@@ -58,7 +58,7 @@
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="../assets/images/coach-placeholder-2.jpeg" alt="Find a Coach website">
+                    <img src="../assets/images/coach.webp" alt="Find a Coach website">
                     <div class="card-body">
                         <h5 class="card-text">Find a Coach</h5>
                         <p>
