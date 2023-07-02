@@ -4,11 +4,10 @@
             Portfolio
         </h2>
         <div class="container">
-
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img src="../assets/images/jules-art.jpg" alt="Jules-art website">
+                        <img src="../assets/images/jules-art.jpg" alt="Jules Art website">
                         <div class="card-body">
                             <h5 class="card-text">Jules Art</h5>
                             <p>
@@ -17,9 +16,14 @@
                             <p>
                                 Build with HTML, CSS, JS.
                             </p>
+                            <p>
+                                <img class="icon" src="../assets/icons/html.png" alt="HTML">
+                                <img class="icon" src="../assets/icons/css.png" alt="CSS">
+                                <img class="icon" src="../assets/icons/javascript.png" alt="Javascript">
+                            </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <a href="https://jules-art.com" class="btn btn-sm btn-outline-secondary">View</a>
                                 </div>
                             </div>
                         </div>
@@ -27,18 +31,26 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img src="../assets/images/habit-tracker-2.png" alt="Jules-art website">
+                        <img src="../assets/images/habit-tracker-2.png" alt="Habit Tracker website">
                         <div class="card-body">
                             <h5 class="card-text">Habit Tracker</h5>
                             <p>
-                                Habit Tracker website that allows you to track your habits. You can add, edit and delete your entries.
+                                Habit Tracker website that allows you to track your habits. You can add, edit and delete
+                                your entries.
                             </p>
                             <p>
-                                Build with Python, SQLlite, HTML, CSS, JS.
+                                Build with Python, SQlite, HTML, CSS, JS.
+                            </p>
+                            <p>
+                                <img class="icon" src="../assets/icons/python.png" alt="Python">
+                                <img class="icon" src="../assets/icons/sql.png" alt="Sqlite">
+                                <img class="icon" src="../assets/icons/html.png" alt="HTML">
+                                <img class="icon" src="../assets/icons/css.png" alt="CSS">
+                                <img class="icon" src="../assets/icons/javascript.png" alt="Javascript">
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <a href="http://pinkowskijakub.eu.pythonanywhere.com" class="btn btn-sm btn-outline-secondary">View</a>
                                 </div>
                             </div>
                         </div>
@@ -46,21 +58,25 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Thumbnail</text>
-                        </svg>
+                        <img src="../assets/images/coach-placeholder-2.jpeg" alt="Find a Coach website">
                         <div class="card-body">
-                            <h5 class="card-text">To be added</h5>
+                            <h5 class="card-text">Find a Coach</h5>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                                Find a coach website that allows you to find and register as a coach. Build for udemy Vue.js course.
+                            </p>
+                            <p>
+                                Buiild with Vue.js, HTML, CSS, JS and Firebase.
+                            </p>
+                            <p>
+                                <img class="icon" src="../assets/icons/vue.png" alt="Vue.js">
+                                <img class="icon" src="../assets/icons/html.png" alt="HTML">
+                                <img class="icon" src="../assets/icons/css.png" alt="CSS">
+                                <img class="icon" src="../assets/icons/javascript.png" alt="Javascript">
+                                <img class="icon" src="../assets/icons/firebase.png" alt="Firebase">
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <a href="https://vue-udemy-section16.web.app" class="btn btn-sm btn-outline-secondary">View</a>
                                 </div>
                             </div>
                         </div>
@@ -86,19 +102,41 @@
          margin-bottom: 1em;
      }
 
-     h5 {
-        color: var(--highlight-color);
-        font-weight: 700;
-    }
+     img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+     }
 
-     button {
+     h5 {
+         color: var(--highlight-color);
+         font-weight: 700;
+     }
+
+     a {
          padding: 0.5em 1.5em;
          border: 1px solid var(--dark-accent);
          color: var(--main-bg-color);
      }
 
      button:hover {
-            background-color: var(--light-accent);
+         background-color: var(--light-accent);
+     }
+
+     .container {
+        justify-content: space-evenly;
+        margin: 0;
+        width: 100%;
+     }
+
+     .row {
+        width: 100%;
+     }
+
+     .icon {
+        width: 40px;
+        height: 40px;
+        padding: 0.2em;
      }
  }
 </style>
