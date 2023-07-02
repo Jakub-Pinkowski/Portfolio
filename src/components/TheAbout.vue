@@ -17,7 +17,7 @@
             </p>
         </div>
         <div id="photo">
-            <img src="../assets/images/CV1.jpg" alt="my_photo">
+            <img src="../assets/images/my-photo.jpg" alt="my_photo">
         </div>
     </div>
 </template>
