@@ -6,18 +6,18 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <router-link to="/">
+                <a href="#home">
                     <li @click='close()'>Home</li>
-                </router-link>
-                <router-link to="/#about">
+                </a>
+                <a href="#about">
                     <li @click='close()'>About</li>
-                </router-link>
-                <router-link to='/#portfolio'>
+                </a>
+                <a href="#portfolio">
                     <li @click='close()'>Portfolio</li>
-                </router-link>
-                <router-link to="/#contact">
+                </a>
+                <a href="#contact">
                     <li @click='close()'>Contact</li>
-                </router-link>
+                </a>
             </ul>
         </div>
     </nav>

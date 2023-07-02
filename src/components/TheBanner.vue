@@ -1,5 +1,5 @@
 <template>
-    <div class="banner ">
+    <div id="home" class="banner ">
 
         <div class="intro">
             <h1 class="heading ma-0 pa-0 "> Jakub Pinkowski </h1>
