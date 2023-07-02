@@ -7,10 +7,19 @@
             <div class="text">
                 <h5>Send me a message!</h5>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum consectetur dolorum ullam laborum,
-                    adipisci sunt fugiat minima mollitia quisquam vero tempore itaque reiciendis voluptas hic, assumenda
-                    ducimus error laudantium!
+                    Feel free to reach out to me via email or LinkedIn. I am always open to new opportunities!
                 </p>
+                <ul class="nav col-md-4 list-unstyled d-flex">
+                    <li class=""><a class="text-body-secondary" href="https://github.com/Jakub-Pinkowski"><svg class="bi"
+                                width="50" height="50">
+                                <use xlink:href="#github" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-body-secondary"
+                            href="https://www.linkedin.com/in/jakub-pinkowski-b44405134/"><svg class="bi" width="50"
+                                height="50">
+                                <use xlink:href="#linkedin" />
+                            </svg></a></li>
+                </ul>
             </div>
             <div class="form-container">
                 <form @submit.prevent="submitForm">
@@ -87,7 +96,7 @@ const submitForm = () => {
      h5 {
          color: var(--main-bg-color);
          font-weight: 700;
-         font-size: 1.5em;
+         font-size: 1.6em;
      }
 
      p {
@@ -95,7 +104,7 @@ const submitForm = () => {
          padding-right: 10px;
          font-weight: 400;
          color: var(--gray);
-         font-size: 1.1em;
+         font-size: 1.3em;
      }
 
      .text {

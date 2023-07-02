@@ -3,7 +3,7 @@
         <h2>
             Portfolio
         </h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row row-cols-1 row-cols-sm-2">
             <div class="col">
                 <div class="card shadow-sm">
                     <img src="../assets/images/jules-art.jpg" alt="Jules Art website">
@@ -122,6 +122,10 @@
 
      a:hover {
          background-color: var(--light-accent);
+     }
+
+     .row {
+         margin: 0;
      }
 
      .col {

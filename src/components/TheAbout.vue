@@ -3,17 +3,13 @@
         <div id="text">
             <h2>About me</h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non adipisci laboriosam placeat nihil ullam
-                dolorum
-                beatae voluptatum, eligendi cum alias.
+                Hello World!
             </p>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, perspiciatis.
+                I'm Jakub, a self-taught developer with a genuine passion for programming. I have a strong background in both back-end and front-end development, enabling me to create comprehensive and dynamic web applications.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio pariatur eius iusto quam totam placeat.
-                Assumenda
-                amet aperiam quasi architecto eum? Fuga debitis beatae amet a? Dolore, libero similique. Eligendi.
+                Welcome to my personal portfolio, where you can explore my projects and dedication to creating high-quality software solutions.
             </p>
         </div>
         <div id="photo">
