@@ -12,15 +12,15 @@
 <style lang="scss" >
 .banner {
     text-align: left;
-    height: 100vh;
-    width: 100vw;
+    height: 80vh;
     background-color: var(--main-bg-color);
     padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .intro {
-    
-    margin-top: 10em;
 
     p {
         margin-left: 10px;
