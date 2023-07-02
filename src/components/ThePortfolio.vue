@@ -120,7 +120,7 @@
          color: var(--main-bg-color);
      }
 
-     button:hover {
+     a:hover {
          background-color: var(--light-accent);
      }
 
