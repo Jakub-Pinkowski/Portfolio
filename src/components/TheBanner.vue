@@ -12,9 +12,9 @@
 <style lang="scss" >
 .banner {
     text-align: left;
-    height: 80vh;
+    height: 100vh;
     background-color: var(--main-bg-color);
-    padding: 10%;
+    padding-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
