@@ -30,7 +30,7 @@
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="../assets/images/habit-tracker-2.png" alt="Habit Tracker website">
+                    <img src="../assets/images/habit-tracker.png" alt="Habit Tracker website">
                     <div class="card-body">
                         <h5 class="card-text">Habit Tracker</h5>
                         <p>
