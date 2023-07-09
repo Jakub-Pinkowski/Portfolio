@@ -13,12 +13,14 @@
                             Artist's portfolio website showcasing her work and allowing to contact her.
                         </p>
                         <p>
-                            Build with HTML, CSS, JS.
+                            Buiild with Vue.js, HTML, CSS, JS and Firebase.
                         </p>
                         <p>
+                            <img class="icon" src="../assets/icons/vue.png" alt="Vue.js">
                             <img class="icon" src="../assets/icons/html.png" alt="HTML">
                             <img class="icon" src="../assets/icons/css.png" alt="CSS">
                             <img class="icon" src="../assets/icons/javascript.png" alt="Javascript">
+                            <img class="icon" src="../assets/icons/firebase.png" alt="Firebase">
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">

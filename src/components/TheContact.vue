@@ -89,78 +89,77 @@ const resetForm = () => {
 };
 
 
-
-
 </script>
 
-<style lang="scss" scoped > #contact {
-     padding-left: 10%;
-     margin-top: 3em;
+<style lang="scss" scoped >
+#contact {
+    padding-left: 10%;
+    margin-top: 3em;
 
-     h2 {
-         text-transform: uppercase;
-         font-weight: 700;
-         color: var(--accent-color);
-         padding-top: 15px;
-         font-family: Montserrat, sans-serif;
-         font-size: 2em;
-         display: block;
-         margin-bottom: 1em;
-     }
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--accent-color);
+        padding-top: 15px;
+        font-family: Montserrat, sans-serif;
+        font-size: 2em;
+        display: block;
+        margin-bottom: 1em;
+    }
 
-     h5 {
-         color: var(--main-bg-color);
-         font-weight: 700;
-         font-size: 1.6em;
-     }
+    h5 {
+        color: var(--main-bg-color);
+        font-weight: 700;
+        font-size: 1.6em;
+    }
 
-     p {
-         padding-block: 10px;
-         padding-right: 10px;
-         font-weight: 400;
-         color: var(--gray);
-         font-size: 1.3em;
-     }
+    p {
+        padding-block: 10px;
+        padding-right: 10px;
+        font-weight: 400;
+        color: var(--gray);
+        font-size: 1.3em;
+    }
 
-     .text {
-         width: 50%;
-         margin: 1em 0;
-     }
+    .text {
+        width: 50%;
+        margin: 1em 0;
+    }
 
-     .form-container {
-         width: 50%;
-         margin: 1em 0;
-     }
+    .form-container {
+        width: 50%;
+        margin: 1em 0;
+    }
 
-     form {
-         display: flex;
-         flex-direction: column;
+    form {
+        display: flex;
+        flex-direction: column;
 
-         input,
-         textarea {
-             width: 80%;
-             margin: 1em;
-             padding: 0.5em;
-             border: 1px solid var(--dark-accent);
-             border-radius: 5px;
+        input,
+        textarea {
+            width: 80%;
+            margin: 1em;
+            padding: 0.5em;
+            border: 1px solid var(--dark-accent);
+            border-radius: 5px;
 
-         }
+        }
 
-         button {
-             margin: 1em;
-             width: 90px;
-             border: 1px solid var(--dark-accent);
-             color: var(--main-bg-color);
-         }
+        button {
+            margin: 1em;
+            width: 90px;
+            border: 1px solid var(--dark-accent);
+            color: var(--main-bg-color);
+        }
 
-         button:hover {
-             background-color: var(--light-accent);
-         }
-     }
+        button:hover {
+            background-color: var(--light-accent);
+        }
+    }
 
-     .contact-form {
-         display: flex;
+    .contact-form {
+        display: flex;
 
-     }
- }
+    }
+}
 </style>
