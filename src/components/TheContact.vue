@@ -42,39 +42,54 @@ const email = ref('')
 const message = ref('')
 
 const submitForm = () => {
-    // Send the datea to the Firebase server
-    const url = 'https://portfolio-e1f1f-default-rtdb.europe-west1.firebasedatabase.app/'
-
     const formData = {
         name: name.value,
         email: email.value,
         message: message.value
-    }
-
-    fetch(url + 'contact.json', {
-        method: 'POST',
-        body: JSON.stringify(formData)
-    })
-
-        // Check if the response was okay
-        .then(response => {
-            if (response.ok) {
-                alert('Your message has been sent!')
-                resetForm()
-            } else {
-                alert('Something went wrong. Please try again later.')
-            }
-        })
-
-    const resetForm = () => {
-        name.value = ''
-        email.value = ''
-        message.value = ''
     };
 
+    fetch('https://api.sendinblue.com/v3/smtp/email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'api-key': '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'
+        },
+        body: JSON.stringify({
+            sender: {
+                name: formData.name,
+                email: formData.email
+            },
+            to: [{ email: 'pinkowski.jakub@googlemail.com' }],
+            subject: 'Portfolio Contact Form',
+            htmlContent: `
+                <p><strong>Name:</strong> ${formData.name}</p>
+                <p><strong>Email:</strong> ${formData.email}</p>
+                <p><strong>Message:</strong> ${formData.message}</p>
+            `
+        })
+    })
+        .then(response => {
+            if (response.ok) {
+                alert('Your message has been sent!');
+                resetForm();
+            } else {
+                alert('Something went wrong. Please try again later.');
+            }
+        })
+        .catch(error => {
+            console.error('Error sending form data:', error);
+            alert('Error sending form data');
+        });
+};
+
+const resetForm = () => {
+    name.value = ''
+    email.value = ''
+    message.value = ''
+};
 
 
-}
+
 
 </script>
 
