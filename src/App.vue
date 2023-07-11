@@ -1,5 +1,6 @@
 <template>
     <body>
+        <TheHead />
         <TheNagivation id="nav"></TheNagivation>
         <main>
             <TheBanner></TheBanner>
