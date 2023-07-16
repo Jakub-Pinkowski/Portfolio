@@ -14,7 +14,7 @@
     </nav>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useViewStore } from '@/stores/views';
 
 const viewStore = useViewStore();

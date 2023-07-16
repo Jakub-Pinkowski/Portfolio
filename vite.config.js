@@ -14,4 +14,18 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url)),
         },
     },
+    configureWebpack: {
+        module: {
+            rules: [
+                {
+                    test: /\.tsx?$/,
+                    loader: 'ts-loader',
+                    options: {
+                        appendTsSuffixTo: [/\.vue$/],
+                    },
+                    exclude: /node_modules/,
+                },
+            ],
+        },
+    },
 });
