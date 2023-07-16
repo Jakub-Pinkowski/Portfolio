@@ -6,34 +6,15 @@
                 <div class="card shadow-sm">
                     <img :src="project.src" :alt="project.name" />
                     <div class="card-body">
-                        <h5 class="card-text">Jules Art</h5>
+                        <h5 class="card-text">{{ project.name }}</h5>
                         <p>{{ project.description }}</p>
                         <p>{{ project.technologiesDescription }}</p>
                         <p>
                             <img
                                 class="icon"
-                                src="../assets/icons/vue.png"
-                                alt="Vue.js"
-                            />
-                            <img
-                                class="icon"
-                                src="../assets/icons/html.png"
-                                alt="HTML"
-                            />
-                            <img
-                                class="icon"
-                                src="../assets/icons/css.png"
-                                alt="CSS"
-                            />
-                            <img
-                                class="icon"
-                                src="../assets/icons/javascript.png"
-                                alt="Javascript"
-                            />
-                            <img
-                                class="icon"
-                                src="../assets/icons/firebase.png"
-                                alt="Firebase"
+                                v-for="tech in project.technologies"
+                                :src="getIconSrc"
+                                :alt="tech"
                             />
                         </p>
                         <div
@@ -54,17 +35,21 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { usePortfolioStore } from '@/stores/portfolio';
-import { useuseIconsStore } from '@/stores/icons';
+import { useIconsStore } from '@/stores/icons';
 
 // Projects
 const portfolioStore = usePortfolioStore();
 const projects = portfolioStore.projects;
 
 // Icons
-const iconsStore = useuseIconsStore();
+const iconsStore = useIconsStore();
 const icons = iconsStore.icons;
+
+const getIconSrc = (tech) => {
+    return iconsStore.icons.find((icon) => icon.name === tech)?.src || '';
+};
 </script>
 
 <style lang="scss" scoped>

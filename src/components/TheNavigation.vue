@@ -14,7 +14,7 @@
     </nav>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { useViewStore } from '@/stores/views';
 
 const viewStore = useViewStore();
@@ -23,7 +23,7 @@ const views = viewStore.views;
 import { ref } from 'vue';
 
 const close = () => {
-    const checkbox = ref<HTMLInputElement | null>(null);
+    const checkbox = (ref < HTMLInputElement) | (null > null);
     if (checkbox.value) {
         checkbox.value.checked = false;
     }
