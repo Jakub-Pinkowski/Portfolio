@@ -15,24 +15,10 @@
 </template>
 
 <script setup lang="ts">
-const views = [
-    {
-        name: 'Home',
-        link: '#home',
-    },
-    {
-        name: 'About',
-        link: '#about',
-    },
-    {
-        name: 'Portfolio',
-        link: '#portfolio',
-    },
-    {
-        name: 'Contact',
-        link: '#contact',
-    },
-];
+import { useViewStore } from '@/stores/views';
+
+const viewStore = useViewStore();
+const views = viewStore.views;
 
 import { ref } from 'vue';
 
