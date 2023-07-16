@@ -1,86 +1,50 @@
 <template>
     <div id="portfolio">
-        <h2>
-            Portfolio
-        </h2>
+        <h2>Portfolio</h2>
         <div class="row row-cols-1 row-cols-sm-2">
-            <div class="col">
+            <div class="col" v-for="project in projects">
                 <div class="card shadow-sm">
-                    <img src="../assets/images/jules-art.jpg" alt="Jules Art website">
+                    <img :src="project.src" :alt="project.name" />
                     <div class="card-body">
                         <h5 class="card-text">Jules Art</h5>
+                        <p>{{ project.description }}</p>
+                        <p>{{ project.technologiesDescription }}</p>
                         <p>
-                            Artist's portfolio website showcasing her work and allowing to contact her.
+                            <img
+                                class="icon"
+                                src="../assets/icons/vue.png"
+                                alt="Vue.js"
+                            />
+                            <img
+                                class="icon"
+                                src="../assets/icons/html.png"
+                                alt="HTML"
+                            />
+                            <img
+                                class="icon"
+                                src="../assets/icons/css.png"
+                                alt="CSS"
+                            />
+                            <img
+                                class="icon"
+                                src="../assets/icons/javascript.png"
+                                alt="Javascript"
+                            />
+                            <img
+                                class="icon"
+                                src="../assets/icons/firebase.png"
+                                alt="Firebase"
+                            />
                         </p>
-                        <p>
-                            Buiild with Vue.js, HTML, CSS, JS and Firebase.
-                        </p>
-                        <p>
-                            <img class="icon" src="../assets/icons/vue.png" alt="Vue.js">
-                            <img class="icon" src="../assets/icons/html.png" alt="HTML">
-                            <img class="icon" src="../assets/icons/css.png" alt="CSS">
-                            <img class="icon" src="../assets/icons/javascript.png" alt="Javascript">
-                            <img class="icon" src="../assets/icons/firebase.png" alt="Firebase">
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div
+                            class="d-flex justify-content-between align-items-center"
+                        >
                             <div class="btn-group">
-                                <a href="https://jules-art.com" class="btn btn-sm btn-outline-secondary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/habit-tracker.png" alt="Habit Tracker website">
-                    <div class="card-body">
-                        <h5 class="card-text">Habit Tracker</h5>
-                        <p>
-                            Habit Tracker website that allows you to track your habits. You can add, edit and delete
-                            your entries.
-                        </p>
-                        <p>
-                            Build with Python, SQlite, HTML, CSS, JS.
-                        </p>
-                        <p>
-                            <img class="icon" src="../assets/icons/python.png" alt="Python">
-                            <img class="icon" src="../assets/icons/sql.png" alt="Sqlite">
-                            <img class="icon" src="../assets/icons/html.png" alt="HTML">
-                            <img class="icon" src="../assets/icons/css.png" alt="CSS">
-                            <img class="icon" src="../assets/icons/javascript.png" alt="Javascript">
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="http://pinkowskijakub.eu.pythonanywhere.com"
-                                    class="btn btn-sm btn-outline-secondary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="../assets/images/coach.webp" alt="Find a Coach website">
-                    <div class="card-body">
-                        <h5 class="card-text">Find a Coach</h5>
-                        <p>
-                            Find a coach website that allows you to find and register as a coach. Build for udemy Vue.js
-                            course.
-                        </p>
-                        <p>
-                            Buiild with Vue.js, HTML, CSS, JS and Firebase.
-                        </p>
-                        <p>
-                            <img class="icon" src="../assets/icons/vue.png" alt="Vue.js">
-                            <img class="icon" src="../assets/icons/html.png" alt="HTML">
-                            <img class="icon" src="../assets/icons/css.png" alt="CSS">
-                            <img class="icon" src="../assets/icons/javascript.png" alt="Javascript">
-                            <img class="icon" src="../assets/icons/firebase.png" alt="Firebase">
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="https://vue-udemy-section16.web.app"
-                                    class="btn btn-sm btn-outline-secondary">View</a>
+                                <a
+                                    :href="project.src"
+                                    class="btn btn-sm btn-outline-secondary"
+                                    >View
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -90,61 +54,75 @@
     </div>
 </template>
 
-<style lang="scss" scoped > #portfolio {
-     padding-left: 10%;
-     margin-top: 3em;
+<script setup lang="ts">
+import { usePortfolioStore } from '@/stores/portfolio';
+import { useuseIconsStore } from '@/stores/icons';
 
-     h2 {
-         text-transform: uppercase;
-         font-weight: 700;
-         color: var(--accent-color);
-         padding-top: 15px;
-         font-family: Montserrat, sans-serif;
-         font-size: 2em;
-         display: block;
-         margin-bottom: 1em;
-     }
+// Projects
+const portfolioStore = usePortfolioStore();
+const projects = portfolioStore.projects;
 
-     img {
-         width: 100%;
-         height: 250px;
-         object-fit: cover;
-     }
+// Icons
+const iconsStore = useuseIconsStore();
+const icons = iconsStore.icons;
+</script>
 
-     h5 {
-         color: var(--highlight-color);
-         font-weight: 700;
-     }
+<style lang="scss" scoped>
+#portfolio {
+    padding-left: 10%;
+    margin-top: 3em;
 
-     a {
-         padding: 0.5em 1.5em;
-         border: 1px solid var(--dark-accent);
-         color: var(--main-bg-color);
-     }
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--accent-color);
+        padding-top: 15px;
+        font-family: Montserrat, sans-serif;
+        font-size: 2em;
+        display: block;
+        margin-bottom: 1em;
+    }
 
-     a:hover {
-         background-color: var(--light-accent);
-     }
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
 
-     .row {
-         margin: 0;
-     }
+    h5 {
+        color: var(--highlight-color);
+        font-weight: 700;
+    }
 
-     .col {
-         margin: 0.5em;
-         width: 30%;
-     }
+    a {
+        padding: 0.5em 1.5em;
+        border: 1px solid var(--dark-accent);
+        color: var(--main-bg-color);
+    }
 
-     .icon {
-         width: 40px;
-         height: 40px;
-         padding: 0.2em;
-     }
+    a:hover {
+        background-color: var(--light-accent);
+    }
 
-     @media (max-width: 768px) {
-         .col {
-             width: 90%;
-         }
-     }
- }
+    .row {
+        margin: 0;
+    }
+
+    .col {
+        margin: 0.5em;
+        width: 30%;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        padding: 0.2em;
+    }
+
+    @media (max-width: 768px) {
+        .col {
+            width: 90%;
+        }
+    }
+}
 </style>
