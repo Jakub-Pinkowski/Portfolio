@@ -1,40 +1,40 @@
 <template>
     <nav role="navigation" class="">
         <div id="menuToggle">
-            <input type="checkbox" ref='checkbox' />
+            <input type="checkbox" ref="checkbox" />
             <span></span>
             <span></span>
             <span></span>
             <ul id="menu">
                 <a href="#home">
-                    <li @click='close()'>Home</li>
+                    <li @click="close()">Home</li>
                 </a>
                 <a href="#about">
-                    <li @click='close()'>About</li>
+                    <li @click="close()">About</li>
                 </a>
                 <a href="#portfolio">
-                    <li @click='close()'>Portfolio</li>
+                    <li @click="close()">Portfolio</li>
                 </a>
                 <a href="#contact">
-                    <li @click='close()'>Contact</li>
+                    <li @click="close()">Contact</li>
                 </a>
             </ul>
         </div>
     </nav>
 </template>
-    
+
 <script>
 export default {
     methods: {
         close() {
             let b = this.$refs.checkbox;
             b.checked = false;
-        }
-    }
-}
+        },
+    },
+};
 </script>
-    
-<style scoped >
+
+<style scoped>
 #menuToggle {
     display: block;
     position: relative;
@@ -57,7 +57,6 @@ export default {
 #menuToggle a:hover {
     color: tomato;
 }
-
 
 #menuToggle input {
     display: block;
@@ -94,9 +93,8 @@ export default {
 
     transform-origin: 4px 0px;
 
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -111,7 +109,7 @@ export default {
      * Transform all the slices of hamburger
      * into a crossmark.
      */
-#menuToggle input:checked~span {
+#menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
@@ -120,7 +118,7 @@ export default {
 /*
      * But let's hide the middle one.
      */
-#menuToggle input:checked~span:nth-last-child(3) {
+#menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -128,7 +126,7 @@ export default {
 /*
      * Ohyeah and the last one should go the other direction
      */
-#menuToggle input:checked~span:nth-last-child(2) {
+#menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -151,7 +149,7 @@ export default {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
 
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #menu li {
@@ -162,7 +160,7 @@ export default {
 /*
      * And let's slide it in from the left
      */
-#menuToggle input:checked~ul {
+#menuToggle input:checked ~ ul {
     transform: none;
 }
 </style>

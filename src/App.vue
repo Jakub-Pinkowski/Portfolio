@@ -13,15 +13,15 @@
 </template>
 
 <script setup>
-import TheNagivation from './components/TheNavigation.vue'
-import TheBanner from './components/TheBanner.vue'
-import TheAbout from './components/TheAbout.vue'
-import ThePortfolio from './components/ThePortfolio.vue'
-import TheContact from './components/TheContact.vue'
-import TheFooter from './components/TheFooter.vue'
+import TheNagivation from './components/TheNavigation.vue';
+import TheBanner from './components/TheBanner.vue';
+import TheAbout from './components/TheAbout.vue';
+import ThePortfolio from './components/ThePortfolio.vue';
+import TheContact from './components/TheContact.vue';
+import TheFooter from './components/TheFooter.vue';
 </script>
 
-<style scoped >
+<style scoped>
 #nav {
     position: fixed;
     z-index: 4;
