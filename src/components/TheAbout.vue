@@ -12,7 +12,7 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const heading_about = 'About me';
 const hello = 'Hello World!';
 const paragraph1 =

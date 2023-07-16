@@ -13,7 +13,7 @@
                             <img
                                 class="icon"
                                 v-for="tech in project.technologies"
-                                :src="getIconSrc"
+                                src="?"
                                 :alt="tech"
                             />
                         </p>
@@ -35,7 +35,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { usePortfolioStore } from '@/stores/portfolio';
 import { useIconsStore } from '@/stores/icons';
 
@@ -46,10 +46,6 @@ const projects = portfolioStore.projects;
 // Icons
 const iconsStore = useIconsStore();
 const icons = iconsStore.icons;
-
-const getIconSrc = (tech) => {
-    return iconsStore.icons.find((icon) => icon.name === tech)?.src || '';
-};
 </script>
 
 <style lang="scss" scoped>
