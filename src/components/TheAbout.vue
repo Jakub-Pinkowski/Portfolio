@@ -3,15 +3,11 @@
         <div class="text">
             <h2>{{ heading_about }}</h2>
             <p>{{ hello }}</p>
-            <p>
-                {{ paragraph1 }}
-            </p>
-            <p>
-                {{ paragaph2 }}
-            </p>
+            <p>{{ paragraph1 }}</p>
+            <p>{{ paragaph2 }}</p>
         </div>
         <div id="photo">
-            <img src="../assets/images/my-photo.jpg" alt="my_photo" />
+            <img :src="my_photo" alt="my_photo" />
         </div>
     </div>
 </template>
@@ -24,6 +20,8 @@ const paragraph1 =
 
 const paragaph2 =
     'Welcome to my personal portfolio, where you can explore my rojects and dedication to creating high-quality software solutions.';
+
+const my_photo = '../assets/images/my-photo.jpg';
 </script>
 
 <style lang="scss" scoped>
