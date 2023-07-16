@@ -1,8 +1,8 @@
 <template>
     <div id="about">
         <div class="text">
-            <h2>About me</h2>
-            <p>Hello World!</p>
+            <h2>{{ heading_about }}</h2>
+            <p>{{ hello }}</p>
             <p>
                 {{ paragraph1 }}
             </p>
@@ -17,6 +17,8 @@
 </template>
 
 <script setup lang="ts">
+const heading_about = 'About me';
+const hello = 'Hello World!';
 const paragraph1 =
     " I'm Jakub, a self-taught developer with a genuine passion for programming. I have a strong background in both back-end and front-end development, enabling me to create comprehensive and dynamic web applications.";
 
