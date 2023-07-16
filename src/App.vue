@@ -1,7 +1,8 @@
 <template>
-    <body>
-        <TheHead />
+    <header>
         <TheNagivation id="nav"></TheNagivation>
+    </header>
+    <body>
         <main>
             <TheBanner></TheBanner>
             <TheAbout></TheAbout>

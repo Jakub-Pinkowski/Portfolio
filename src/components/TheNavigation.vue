@@ -6,31 +6,41 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <a href="#home">
-                    <li @click="close()">Home</li>
-                </a>
-                <a href="#about">
-                    <li @click="close()">About</li>
-                </a>
-                <a href="#portfolio">
-                    <li @click="close()">Portfolio</li>
-                </a>
-                <a href="#contact">
-                    <li @click="close()">Contact</li>
+                <a v-for="view in views" :href="view.link">
+                    <li @click="close()">{{ view.name }}</li>
                 </a>
             </ul>
         </div>
     </nav>
 </template>
 
-<script>
-export default {
-    methods: {
-        close() {
-            let b = this.$refs.checkbox;
-            b.checked = false;
-        },
+<script setup lang="ts">
+const views = [
+    {
+        name: 'Home',
+        link: '#home',
     },
+    {
+        name: 'About',
+        link: '#about',
+    },
+    {
+        name: 'Portfolio',
+        link: '#portfolio',
+    },
+    {
+        name: 'Contact',
+        link: '#contact',
+    },
+];
+
+import { ref } from 'vue';
+
+const close = () => {
+    const checkbox = ref<HTMLInputElement | null>(null);
+    if (checkbox.value) {
+        checkbox.value.checked = false;
+    }
 };
 </script>
 
@@ -69,16 +79,11 @@ export default {
     cursor: pointer;
 
     opacity: 0;
-    /* hide this */
     z-index: 2;
-    /* and place it over the hamburger */
 
     -webkit-touch-callout: none;
 }
 
-/*
-     * Just a quick hamburger
-     */
 #menuToggle span {
     display: block;
     width: 33px;
@@ -105,35 +110,21 @@ export default {
     transform-origin: 0% 100%;
 }
 
-/*
-     * Transform all the slices of hamburger
-     * into a crossmark.
-     */
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
 }
 
-/*
-     * But let's hide the middle one.
-     */
 #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
-     * Ohyeah and the last one should go the other direction
-     */
 #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
-     * Make this absolute positioned
-     * at the top left of the screen
-     */
 #menu {
     position: absolute;
     width: 300px;
@@ -144,7 +135,6 @@ export default {
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
 
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -157,9 +147,6 @@ export default {
     font-size: 22px;
 }
 
-/*
-     * And let's slide it in from the left
-     */
 #menuToggle input:checked ~ ul {
     transform: none;
 }
