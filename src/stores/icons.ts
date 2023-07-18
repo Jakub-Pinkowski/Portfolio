@@ -1,44 +1,54 @@
 import { defineStore } from 'pinia';
 
+import vueIcon from '../assets/icons/vue.png';
+import htmlIcon from '../assets/icons/html.png';
+import cssIcon from '../assets/icons/css.png';
+import jsIcon from '../assets/icons/js.png';
+import tsIcon from '../assets/icons/ts.png';
+import pythonIcon from '../assets/icons/python.png';
+import firebaseIcon from '../assets/icons/firebase.png';
+import sqliteIcon from '../assets/icons/sql.png';
+import gitIcon from '../assets/icons/git.png';
+
 export const useIconsStore = defineStore({
     id: 'iconsStore',
     state: () => ({
         icons: [
             {
                 name: 'vue',
-                src: '../assets/icons/vue.png',
+                src: vueIcon,
             },
             {
                 name: 'html',
-                src: '../assets/icons/html.png',
+                src: htmlIcon,
             },
             {
                 name: 'css',
-                src: '../assets/icons/css.png',
+                src: cssIcon,
             },
             {
                 name: 'js',
-                src: '../assets/icons/js.png',
+                src: jsIcon,
             },
             {
                 name: 'ts',
-                src: '../assets/icons/ts.png',
+                src: tsIcon,
             },
             {
                 name: 'python',
-                src: '../assets/icons/python.png',
+                src: pythonIcon,
             },
             {
                 name: 'firebase',
-                src: '../assets/icons/firebase.png',
+                src: firebaseIcon,
             },
             {
                 name: 'sqlite',
-                src: '../assets/icons/sqlite.png',
+                src: sqliteIcon,
             },
             {
                 name: 'git',
-                src: '../assets/icons/git.png',
+                src: gitIcon,
             },
         ],
     }),

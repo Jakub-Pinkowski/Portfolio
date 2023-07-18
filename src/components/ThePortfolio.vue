@@ -13,7 +13,8 @@
                             <img
                                 class="icon"
                                 v-for="tech in project.technologies"
-                                src="?"
+                                :key="tech"
+                                :src="getIconSrc(tech)"
                                 :alt="tech"
                             />
                         </p>
@@ -46,6 +47,11 @@ const projects = projectsStore.projects;
 // Icons
 const iconsStore = useIconsStore();
 const icons = iconsStore.icons;
+
+const getIconSrc = (tech: string) => {
+    const icon = icons.find((icon) => icon.name === tech);
+    return icon ? icon.src : '';
+};
 </script>
 
 <style lang="scss" scoped>
