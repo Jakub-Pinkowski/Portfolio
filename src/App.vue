@@ -13,7 +13,7 @@
     </body>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import TheNagivation from './components/TheNavigation.vue';
 import TheBanner from './components/TheBanner.vue';
 import TheAbout from './components/TheAbout.vue';
