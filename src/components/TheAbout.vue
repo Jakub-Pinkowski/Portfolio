@@ -13,6 +13,8 @@
 </template>
 
 <script setup lang="ts">
+import my_photo from '../assets/images/my-photo.jpg';
+
 const heading_about = 'About me';
 const hello = 'Hello World!';
 const paragraph1 =
@@ -20,8 +22,6 @@ const paragraph1 =
 
 const paragaph2 =
     'Welcome to my personal portfolio, where you can explore my rojects and dedication to creating high-quality software solutions.';
-
-const my_photo = '../assets/images/my-photo.jpg';
 </script>
 
 <style lang="scss" scoped>
