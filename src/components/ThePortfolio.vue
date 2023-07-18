@@ -25,7 +25,25 @@
                                 <a
                                     :href="project.src"
                                     class="btn btn-sm btn-outline-secondary"
-                                    >View
+                                >
+                                    <img
+                                        class="icon"
+                                        :src="getIconSrc('globe')"
+                                        alt="globe icon"
+                                    />
+                                    View Website
+                                </a>
+
+                                <a
+                                    :href="project.github"
+                                    class="btn btn-sm btn-outline-secondary"
+                                >
+                                    <img
+                                        class="icon"
+                                        :src="getIconSrc('github')"
+                                        alt="github icon"
+                                    />
+                                    View Code
                                 </a>
                             </div>
                         </div>
@@ -47,6 +65,9 @@ const projects = projectsStore.projects;
 // Icons
 const iconsStore = useIconsStore();
 const icons = iconsStore.icons;
+
+const globeIcon = icons ? icons.find((icon) => icon.name === 'globe') : null;
+const githubIcon = icons ? icons.find((icon) => icon.name === 'github') : null;
 
 const getIconSrc = (tech: string) => {
     const icon = icons.find((icon) => icon.name === tech);
@@ -105,6 +126,16 @@ const getIconSrc = (tech: string) => {
         height: 40px;
         padding: 0.2em;
     }
+
+    .btn-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Mobile */
 
     @media (max-width: 768px) {
         .col {

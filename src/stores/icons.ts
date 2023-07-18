@@ -9,6 +9,8 @@ import pythonIcon from '../assets/icons/python.png';
 import firebaseIcon from '../assets/icons/firebase.png';
 import sqliteIcon from '../assets/icons/sql.png';
 import gitIcon from '../assets/icons/git.png';
+import githubIcon from '../assets/icons/github.png';
+import globe from '../assets/icons/globe.png';
 
 export const useIconsStore = defineStore({
     id: 'iconsStore',
@@ -49,6 +51,14 @@ export const useIconsStore = defineStore({
             {
                 name: 'git',
                 src: gitIcon,
+            },
+            {
+                name: 'github',
+                src: githubIcon,
+            },
+            {
+                name: 'globe',
+                src: globe,
             },
         ],
     }),
