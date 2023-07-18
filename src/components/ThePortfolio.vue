@@ -31,7 +31,7 @@
                                         :src="getIconSrc('globe')"
                                         alt="globe icon"
                                     />
-                                    View Website
+                                    Visit Website
                                 </a>
 
                                 <a
@@ -66,9 +66,6 @@ const projects = projectsStore.projects;
 const iconsStore = useIconsStore();
 const icons = iconsStore.icons;
 
-const globeIcon = icons ? icons.find((icon) => icon.name === 'globe') : null;
-const githubIcon = icons ? icons.find((icon) => icon.name === 'github') : null;
-
 const getIconSrc = (tech: string) => {
     const icon = icons.find((icon) => icon.name === tech);
     return icon ? icon.src : '';
@@ -91,48 +88,48 @@ const getIconSrc = (tech: string) => {
         margin-bottom: 1em;
     }
 
-    img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-    }
-
-    h5 {
-        color: var(--highlight-color);
-        font-weight: 700;
-    }
-
-    a {
-        padding: 0.5em 1.5em;
-        border: 1px solid var(--dark-accent);
-        color: var(--main-bg-color);
-    }
-
-    a:hover {
-        background-color: var(--light-accent);
-    }
-
     .row {
         margin: 0;
-    }
 
-    .col {
-        margin: 0.5em;
-        width: 30%;
-    }
+        .col {
+            margin: 0.5em;
+            width: 30%;
 
-    .icon {
-        width: 40px;
-        height: 40px;
-        padding: 0.2em;
-    }
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
 
-    .btn-group {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+            h5 {
+                color: var(--highlight-color);
+                font-weight: 700;
+            }
+
+            a {
+                padding: 0.5em 1.5em;
+                border: 1px solid var(--dark-accent);
+                color: var(--main-bg-color);
+            }
+
+            a:hover {
+                background-color: var(--light-accent);
+            }
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                padding: 0.2em;
+            }
+
+            .btn-group {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
     }
 
     /* Mobile */

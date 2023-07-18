@@ -12,7 +12,7 @@ const heading1 = 'Jakub Pinkowski';
 const heading2 = 'Self-taught Web Developer';
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .banner {
     text-align: left;
     height: 100vh;
@@ -21,27 +21,8 @@ const heading2 = 'Self-taught Web Developer';
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .intro {
-        p {
-            margin-left: 10px;
-            padding: 0;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: var(--dark-accent);
-        }
-
-        span {
-            color: var(--dark-accent);
-        }
-
-        .btn {
-            color: var(--gray);
-        }
-
-        .secondary-text {
-            color: var(--gray);
-        }
-
         .heading {
             margin: 0px;
             padding: 0px;
@@ -49,7 +30,7 @@ const heading2 = 'Self-taught Web Developer';
             color: var(--highlight-color);
         }
 
-        h2 {
+        .secondary-text {
             margin-top: 1em;
             padding: 0px;
             font-size: 2em;

@@ -142,57 +142,57 @@ const resetForm = () => {
         margin-bottom: 1em;
     }
 
-    h5 {
-        color: var(--main-bg-color);
-        font-weight: 700;
-        font-size: 1.6em;
-    }
-
-    p {
-        padding-block: 10px;
-        padding-right: 10px;
-        font-weight: 400;
-        color: var(--gray);
-        font-size: 1.3em;
-    }
-
-    .text {
-        width: 50%;
-        margin: 1em 0;
-    }
-
-    .form-container {
-        width: 50%;
-        margin: 1em 0;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-
-        input,
-        textarea {
-            width: 80%;
-            margin: 1em;
-            padding: 0.5em;
-            border: 1px solid var(--dark-accent);
-            border-radius: 5px;
-        }
-
-        button {
-            margin: 1em;
-            width: 90px;
-            border: 1px solid var(--dark-accent);
-            color: var(--main-bg-color);
-        }
-
-        button:hover {
-            background-color: var(--light-accent);
-        }
-    }
-
     .contact-form {
         display: flex;
+
+        .text {
+            width: 50%;
+            margin: 1em 0;
+
+            h5 {
+                color: var(--main-bg-color);
+                font-weight: 700;
+                font-size: 1.6em;
+            }
+
+            p {
+                padding-block: 10px;
+                padding-right: 10px;
+                font-weight: 400;
+                color: var(--gray);
+                font-size: 1.3em;
+            }
+        }
+
+        .form-container {
+            width: 50%;
+            margin: 1em 0;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input,
+                textarea {
+                    width: 80%;
+                    margin: 1em;
+                    padding: 0.5em;
+                    border: 1px solid var(--dark-accent);
+                    border-radius: 5px;
+                }
+
+                button {
+                    margin: 1em;
+                    width: 90px;
+                    border: 1px solid var(--dark-accent);
+                    color: var(--main-bg-color);
+                }
+
+                button:hover {
+                    background-color: var(--light-accent);
+                }
+            }
+        }
     }
 }
 </style>

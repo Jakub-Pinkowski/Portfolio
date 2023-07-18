@@ -1,7 +1,7 @@
 <template>
     <nav role="navigation" class="">
         <div id="menuToggle">
-            <input type="checkbox" ref="checkbox" />
+            <input type="checkbox" ref="checkbox" v-model="checkboxChecked" />
             <span></span>
             <span></span>
             <span></span>
@@ -16,17 +16,15 @@
 
 <script setup lang="ts">
 import { useViewStore } from '@/stores/views';
+import { ref } from 'vue';
 
 const viewStore = useViewStore();
 const views = viewStore.views;
 
-import { ref } from 'vue';
-
+// Close the menu when a link is clicked
+const checkboxChecked = ref(false);
 const close = () => {
-    const checkbox = (ref < HTMLInputElement) | (null > null);
-    if (checkbox.value) {
-        checkbox.value.checked = false;
-    }
+    checkboxChecked.value = false;
 };
 </script>
 

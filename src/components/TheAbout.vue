@@ -32,24 +32,6 @@ const paragaph2 =
     margin-top: 7em;
     margin-bottom: 7em;
 
-    h2 {
-        text-transform: uppercase;
-        font-weight: 700;
-        color: var(--accent-color);
-        padding-top: 15px;
-        font-family: Montserrat, sans-serif;
-        font-size: 2em;
-        display: block;
-        margin-bottom: 1em;
-    }
-
-    p {
-        padding-block: 10px;
-        padding-right: 10px;
-        font-weight: 400;
-        color: var(--gray);
-        font-size: 1.4em;
-    }
     .text {
         max-width: 100%;
         width: 50%;
@@ -57,6 +39,25 @@ const paragaph2 =
         flex-direction: column;
         justify-content: center;
         align-items: left;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--accent-color);
+            padding-top: 15px;
+            font-family: Montserrat, sans-serif;
+            font-size: 2em;
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        p {
+            padding-block: 10px;
+            padding-right: 10px;
+            font-weight: 400;
+            color: var(--gray);
+            font-size: 1.4em;
+        }
     }
 
     #photo {
@@ -80,9 +81,13 @@ const paragaph2 =
         flex-direction: column;
     }
 
-    #text,
     #photo {
-        width: 100%;
+        width: 100% !important;
+    }
+
+    .text {
+        width: 90% !important;
+        text-align: justify;
     }
 }
 </style>
