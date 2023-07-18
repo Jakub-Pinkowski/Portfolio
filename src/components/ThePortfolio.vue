@@ -4,7 +4,7 @@
         <div class="row row-cols-1 row-cols-sm-2">
             <div class="col" v-for="project in projects">
                 <div class="card shadow-sm">
-                    <img :src="project.src" :alt="project.name" />
+                    <img :src="project.img" :alt="project.name" />
                     <div class="card-body">
                         <h5 class="card-text">{{ project.name }}</h5>
                         <p>{{ project.description }}</p>
@@ -36,12 +36,12 @@
 </template>
 
 <script setup lang="ts">
-import { usePortfolioStore } from '@/stores/portfolio';
+import { useProjectsStore } from '@/stores/projects';
 import { useIconsStore } from '@/stores/icons';
 
 // Projects
-const portfolioStore = usePortfolioStore();
-const projects = portfolioStore.projects;
+const projectsStore = useProjectsStore();
+const projects = projectsStore.projects;
 
 // Icons
 const iconsStore = useIconsStore();

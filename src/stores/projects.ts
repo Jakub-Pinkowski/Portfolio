@@ -1,11 +1,11 @@
 import { defineStore } from 'pinia';
 
 import image_jules_art from '@/assets/images/jules-art.jpg';
-import image_habit_tracker from '@/assets/images/habit-tracker.jpg';
+import image_habit_tracker from '@/assets/images/habit-tracker.png';
 import image_coach from '@/assets/images/coach.webp';
 
-export const usePortfolioStore = defineStore({
-    id: 'portfolioStore',
+export const useProjectsStore = defineStore({
+    id: 'projectsStore',
     state: () => ({
         projects: [
             {
