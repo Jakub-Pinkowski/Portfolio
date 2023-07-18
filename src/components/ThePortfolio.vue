@@ -136,7 +136,7 @@ const getIconSrc = (tech: string) => {
 
     @media (max-width: 768px) {
         .col {
-            width: 90%;
+            width: 90% !important;
         }
     }
 }
