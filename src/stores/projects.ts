@@ -16,7 +16,7 @@ export const useProjectsStore = defineStore({
                 description:
                     "Artist's portfolio website showcasing her work and allowing to contact her.",
                 technologiesDescription:
-                    'Build with Vue.js, HTML, CSS, TS and Firebase.',
+                    'Built with Vue.js, HTML, CSS, TS and Firebase.',
                 technologies: ['vue', 'html', 'css', 'ts', 'firebase'],
                 github: 'https://github.com/Jakub-Pinkowski/Jules-Art',
             },
@@ -28,7 +28,7 @@ export const useProjectsStore = defineStore({
                 description:
                     'Habit Tracker website that allows you to track your habits. You can add, edit and delete your entries.',
                 technologiesDescription:
-                    'Build with Python, SQlite, HTML, CSS, JS.',
+                    'Built with Python, SQlite, HTML, CSS, JS.',
                 technologies: ['python', 'sqlite', 'html', 'css', 'js'],
                 github: 'https://github.com/Jakub-Pinkowski/cs50_final_project',
             },
@@ -40,7 +40,7 @@ export const useProjectsStore = defineStore({
                 description:
                     'Find a coach website that allows you to find and register as a coach. Build for udemy Vue.js course.',
                 technologiesDescription:
-                    'Buiild with Vue.js, HTML, CSS, JS and Firebase.',
+                    'Built with Vue.js, HTML, CSS, JS and Firebase.',
                 technologies: ['vue', 'html', 'css', 'js', 'firebase'],
                 github: 'https://github.com/Jakub-Pinkowski/vue-udemy',
             },
