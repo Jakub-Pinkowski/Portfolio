@@ -90,10 +90,30 @@ const getIconSrc = (tech: string) => {
 
     .row {
         margin: 0;
+        display: flex;
+        flex-wrap: wrap;
 
         .col {
-            margin: 0.5em;
             width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .card {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+
+                    .card-text {
+                        flex-grow: 1;
+                    }
+                }
+            }
 
             img {
                 width: 100%;
