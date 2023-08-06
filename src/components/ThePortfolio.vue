@@ -55,21 +55,21 @@
 </template>
 
 <script setup lang="ts">
-import { useProjectsStore } from '@/stores/projects';
-import { useIconsStore } from '@/stores/icons';
+import { useProjectsStore } from '@/stores/projects'
+import { useIconsStore } from '@/stores/icons'
 
 // Projects
-const projectsStore = useProjectsStore();
-const projects = projectsStore.projects;
+const projectsStore = useProjectsStore()
+const projects = projectsStore.projects
 
 // Icons
-const iconsStore = useIconsStore();
-const icons = iconsStore.icons;
+const iconsStore = useIconsStore()
+const icons = iconsStore.icons
 
 const getIconSrc = (tech: string) => {
-    const icon = icons.find((icon) => icon.name === tech);
-    return icon ? icon.src : '';
-};
+    const icon = icons.find((icon) => icon.name === tech)
+    return icon ? icon.src : ''
+}
 </script>
 
 <style lang="scss" scoped>
@@ -94,7 +94,8 @@ const getIconSrc = (tech: string) => {
         flex-wrap: wrap;
 
         .col {
-            width: 30%;
+            margin-top: 2rem;
+            width: 45%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;

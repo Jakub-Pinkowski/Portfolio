@@ -1,8 +1,9 @@
-import { defineStore } from 'pinia';
+import { defineStore } from 'pinia'
 
-import image_jules_art from '@/assets/images/jules-art.jpg';
-import image_habit_tracker from '@/assets/images/habit-tracker.png';
-import image_coach from '@/assets/images/coach.webp';
+import image_jules_art from '@/assets/images/jules-art.jpg'
+import image_habit_tracker from '@/assets/images/habit-tracker.png'
+import image_coach from '@/assets/images/coach.webp'
+import weather_app from '@/assets/images/weather-app.png'
 
 export const useProjectsStore = defineStore({
     id: 'projectsStore',
@@ -44,6 +45,18 @@ export const useProjectsStore = defineStore({
                 technologies: ['vue', 'html', 'css', 'js', 'firebase'],
                 github: 'https://github.com/Jakub-Pinkowski/vue-udemy',
             },
+            {
+                id: 4,
+                name: 'Weather App',
+                src: 'https://weather-app-11d00.web.app',
+                img: weather_app,
+                description:
+                    'Weather app that allows you to check the weather in your city and add it to your favourites.',
+                technologiesDescription:
+                    'Built with Vue.js, HTML, CSS, TS and Firebase.',
+                technologies: ['vue', 'html', 'css', 'ts', 'firebase'],
+                github: 'https://github.com/Jakub-Pinkowski/Weather-App',
+            },
         ],
     }),
-});
+})
