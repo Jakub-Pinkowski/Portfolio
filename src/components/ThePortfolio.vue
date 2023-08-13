@@ -92,10 +92,12 @@ const getIconSrc = (tech: string) => {
         margin: 0;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 10%;
 
         .col {
             margin-top: 2rem;
-            width: 45%;
+            width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
