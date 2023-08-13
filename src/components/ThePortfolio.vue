@@ -25,6 +25,8 @@
                                 <a
                                     :href="project.src"
                                     class="btn btn-sm btn-outline-secondary"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <img
                                         class="icon"
@@ -37,6 +39,8 @@
                                 <a
                                     :href="project.github"
                                     class="btn btn-sm btn-outline-secondary"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <img
                                         class="icon"

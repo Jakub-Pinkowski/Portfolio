@@ -21,7 +21,7 @@ const paragraph1 =
     " I'm Jakub, a self-taught developer with a genuine passion for programming. I have a strong background in both back-end and front-end development, enabling me to create comprehensive and dynamic web applications."
 
 const paragaph2 =
-    'Welcome to my personal portfolio, where you can explore my rojects and dedication to creating high-quality software solutions.'
+    'Welcome to my personal portfolio, where you can explore my projects and dedication to creating high-quality software solutions.'
 </script>
 
 <style lang="scss" scoped>
