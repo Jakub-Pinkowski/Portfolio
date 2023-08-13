@@ -5,6 +5,7 @@ import image_habit_tracker from '@/assets/images/habit-tracker.png'
 import image_coach from '@/assets/images/coach.webp'
 import weather_app from '@/assets/images/weather-app.png'
 import travel_blog from '@/assets/images/travel-blog.jpg'
+import todo from '@/assets/images/todo.jpg'
 
 export const useProjectsStore = defineStore({
     id: 'projectsStore',
@@ -36,15 +37,15 @@ export const useProjectsStore = defineStore({
             },
             {
                 id: 3,
-                name: 'Find a Coach',
-                src: 'https://vue-udemy-section16.web.app',
-                img: image_coach,
+                name: 'Habit Tracker',
+                src: 'http://pinkowskijakub.eu.pythonanywhere.com',
+                img: image_habit_tracker,
                 description:
-                    'Find a coach website that allows you to find and register as a coach. Build for udemy Vue.js course.',
+                    'Habit Tracker website that allows you to track your habits. You can add, edit and delete your entries.',
                 technologiesDescription:
-                    'Built with Vue.js, JS, HTML, CSS and Firebase.',
-                technologies: ['vue', 'js', 'html', 'css', 'firebase'],
-                github: 'https://github.com/Jakub-Pinkowski/vue-udemy',
+                    'Built with Python, SQlite, JS, HTML and CSS.',
+                technologies: ['python', 'sqlite', 'js', 'html', 'css'],
+                github: 'https://github.com/Jakub-Pinkowski/cs50_final_project',
             },
             {
                 id: 4,
@@ -67,15 +68,27 @@ export const useProjectsStore = defineStore({
             },
             {
                 id: 5,
-                name: 'Habit Tracker',
-                src: 'http://pinkowskijakub.eu.pythonanywhere.com',
-                img: image_habit_tracker,
+                name: 'Find a Coach',
+                src: 'https://vue-udemy-section16.web.app',
+                img: image_coach,
                 description:
-                    'Habit Tracker website that allows you to track your habits. You can add, edit and delete your entries.',
+                    'Find a coach website that allows you to find and register as a coach. Build for udemy Vue.js course.',
                 technologiesDescription:
-                    'Built with Python, SQlite, JS, HTML and CSS.',
-                technologies: ['python', 'sqlite', 'js', 'html', 'css'],
-                github: 'https://github.com/Jakub-Pinkowski/cs50_final_project',
+                    'Built with Vue.js, JS, HTML, CSS and Firebase.',
+                technologies: ['vue', 'js', 'html', 'css', 'firebase'],
+                github: 'https://github.com/Jakub-Pinkowski/vue-udemy',
+            },
+            {
+                id: 6,
+                name: 'TODO App',
+                src: 'https://todo-app-5ce36.web.app',
+                img: todo,
+                description:
+                    'Simple TODO app that allows you to add, edit and delete your tasks.',
+                technologiesDescription:
+                    'Built with Vue.js, TS, HTML, CSS and Firebase.',
+                technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
+                github: 'https://github.com/Jakub-Pinkowski/Todo-App',
             },
         ],
     }),

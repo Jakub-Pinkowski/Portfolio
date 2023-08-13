@@ -100,7 +100,7 @@ const getIconSrc = (tech: string) => {
         margin-right: 10%;
 
         .col {
-            margin-top: 2rem;
+margin: 2rem 1rem;
             width: 30%;
             display: flex;
             flex-direction: column;
