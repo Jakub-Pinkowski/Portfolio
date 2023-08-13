@@ -62,29 +62,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 // Text
-const heading_contact = 'Contact';
-const heading_contact_form = 'Send me a message!';
+const heading_contact = 'Contact'
+const heading_contact_form = 'Send me a message!'
 const paragraph_contact =
-    'Feel free to reach out to me via email or LinkedIn. I am always open to new opportunities!';
-const github = 'https://github.com/Jakub-Pinkowski';
-const linkedin = 'https://www.linkedin.com/in/jakub-pinkowski-b44405134/';
+    'Feel free to reach out to me via email or LinkedIn. I am always open to new opportunities!'
+const github = 'https://github.com/Jakub-Pinkowski'
+const linkedin = 'https://www.linkedin.com/in/jakub-pinkowski-b44405134/'
 
 // Form
-const name = ref('');
-const email = ref('');
-const message = ref('');
+const name = ref('')
+const email = ref('')
+const message = ref('')
 
 const submitForm = () => {
-    const formData = new FormData();
+    const formData = new FormData()
 
-    formData.append('name', name.value);
-    formData.append('email', email.value);
-    formData.append('message', message.value);
+    formData.append('name', name.value)
+    formData.append('email', email.value)
+    formData.append('message', message.value)
 
-    const url = 'https://formspree.io/f/xpzgwgre';
+    const url = 'https://formspree.io/f/xpzgwgre'
 
     fetch(url, {
         method: 'POST',
@@ -92,23 +92,23 @@ const submitForm = () => {
     })
         .then((response) => {
             if (response.ok) {
-                alert('Your message has been sent!');
-                resetForm();
+                alert('Your message has been sent!')
+                resetForm()
             } else {
-                alert('Something went wrong. Please try again later.');
+                alert('Something went wrong. Please try again later.')
             }
         })
         .catch(() => {
-            alert('Your message has been sent!');
-            resetForm();
-        });
-};
+            alert('Your message has been sent!')
+            resetForm()
+        })
+}
 
 const resetForm = () => {
-    name.value = '';
-    email.value = '';
-    message.value = '';
-};
+    name.value = ''
+    email.value = ''
+    message.value = ''
+}
 </script>
 
 <style lang="scss" scoped>

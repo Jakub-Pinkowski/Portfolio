@@ -154,12 +154,20 @@ const getIconSrc = (tech: string) => {
             }
         }
     }
+}
 
-    /* Mobile */
+/* Mobile */
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
+    #portfolio {
+        padding-right: 10%;
+        .row {
+            margin: 0;
+        }
         .col {
-            width: 90% !important;
+            margin: 0;
+            padding:0;
+            width: 100% !important
         }
     }
 }
