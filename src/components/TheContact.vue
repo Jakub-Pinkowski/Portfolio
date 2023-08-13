@@ -180,4 +180,33 @@ const resetForm = () => {
         }
     }
 }
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    #contact {
+        .contact-form {
+            flex-direction: column;
+        }
+
+        .text {
+            width: 80% !important;
+            margin: 0;
+        }
+        .form-container {
+            width: 100% !important;
+            margin: 0;
+
+            form {
+                input,
+                textarea,
+                button {
+                    margin: 1em 0 !important
+                }
+            }
+        }
+
+
+    }
+}
 </style>
