@@ -63,6 +63,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import axios from 'axios'
 
 // Text
 const heading_contact = 'Contact'
@@ -77,7 +78,7 @@ const name = ref('')
 const email = ref('')
 const message = ref('')
 
-const submitForm = () => {
+const submitForm = async () => {
     const formData = new FormData()
 
     formData.append('name', name.value)
@@ -86,22 +87,22 @@ const submitForm = () => {
 
     const url = 'https://formspree.io/f/xpzgwgre'
 
-    fetch(url, {
-        method: 'POST',
-        body: formData,
-    })
-        .then((response) => {
-            if (response.ok) {
-                alert('Your message has been sent!')
-                resetForm()
-            } else {
-                alert('Something went wrong. Please try again later.')
-            }
+    try {
+        const response = await axios.post(url, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            },
         })
-        .catch(() => {
+
+        if (response.status === 200) {
             alert('Your message has been sent!')
             resetForm()
-        })
+        } else {
+            alert('Something went wrong. Please try again later.')
+        }
+    } catch (error) {
+        alert('Something went wrong. Please try again later.')
+    }
 }
 
 const resetForm = () => {
