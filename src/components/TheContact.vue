@@ -193,6 +193,10 @@ const resetForm = () => {
             width: 80% !important;
             margin: 0;
             text-align: justify;
+
+            h5 {
+                font-size: 1.5em !important;
+            }
         }
         .form-container {
             width: 100% !important;
@@ -202,12 +206,10 @@ const resetForm = () => {
                 input,
                 textarea,
                 button {
-                    margin: 1em 0 !important
+                    margin: 1em 0 !important;
                 }
             }
         }
-
-
     }
 }
 </style>

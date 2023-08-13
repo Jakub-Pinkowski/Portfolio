@@ -166,8 +166,14 @@ const getIconSrc = (tech: string) => {
         }
         .col {
             margin: 0;
-            padding:0;
-            width: 100% !important
+            padding: 0;
+            width: 100% !important;
+
+            .btn-group {
+                a {
+                    padding: 1em 0;
+                }
+            }
         }
     }
 }
