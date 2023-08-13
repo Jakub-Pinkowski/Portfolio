@@ -192,6 +192,7 @@ const resetForm = () => {
         .text {
             width: 80% !important;
             margin: 0;
+            text-align: justify;
         }
         .form-container {
             width: 100% !important;

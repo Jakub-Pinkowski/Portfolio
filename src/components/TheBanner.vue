@@ -8,8 +8,8 @@
 </template>
 
 <script setup lang="ts">
-const heading1 = 'Jakub Pinkowski';
-const heading2 = 'Self-taught Web Developer';
+const heading1 = 'Jakub Pinkowski'
+const heading2 = 'Self-taught Web Developer'
 </script>
 
 <style lang="scss" scoped>

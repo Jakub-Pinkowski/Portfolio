@@ -6,22 +6,22 @@
             <p>{{ paragraph1 }}</p>
             <p>{{ paragaph2 }}</p>
         </div>
-        <div id="photo">
+        <div class="photo">
             <img :src="my_photo" alt="my_photo" />
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import my_photo from '../assets/images/my-photo.jpg';
+import my_photo from '../assets/images/my-photo.jpg'
 
-const heading_about = 'About me';
-const hello = 'Hello World!';
+const heading_about = 'About me'
+const hello = 'Hello World!'
 const paragraph1 =
-    " I'm Jakub, a self-taught developer with a genuine passion for programming. I have a strong background in both back-end and front-end development, enabling me to create comprehensive and dynamic web applications.";
+    " I'm Jakub, a self-taught developer with a genuine passion for programming. I have a strong background in both back-end and front-end development, enabling me to create comprehensive and dynamic web applications."
 
 const paragaph2 =
-    'Welcome to my personal portfolio, where you can explore my rojects and dedication to creating high-quality software solutions.';
+    'Welcome to my personal portfolio, where you can explore my rojects and dedication to creating high-quality software solutions.'
 </script>
 
 <style lang="scss" scoped>
@@ -60,7 +60,7 @@ const paragaph2 =
         }
     }
 
-    #photo {
+    .photo {
         width: 50%;
         display: flex;
         justify-content: center;
@@ -79,15 +79,22 @@ const paragaph2 =
 @media (max-width: 768px) {
     #about {
         flex-direction: column;
-    }
+        margin-right: 10%;
 
-    #photo {
-        width: 100% !important;
-    }
+        .text {
+            width: 100% !important;
+            text-align: justify;
+        }
 
-    .text {
-        width: 90% !important;
-        text-align: justify;
+        .photo {
+            width: 100% !important;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 }
 </style>
