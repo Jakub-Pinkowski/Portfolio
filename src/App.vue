@@ -1,15 +1,15 @@
 <template>
     <header>
-        <TheNagivation id="nav"></TheNagivation>
+        <TheNagivation class="nav" />
     </header>
     <body>
         <main>
-            <TheBanner></TheBanner>
-            <TheAbout></TheAbout>
-            <ThePortfolio></ThePortfolio>
-            <TheContact></TheContact>
+            <TheBanner />
+            <TheAbout />
+            <ThePortfolio />
+            <TheContact />
         </main>
-        <TheFooter></TheFooter>
+        <TheFooter />
     </body>
 </template>
 
@@ -22,8 +22,8 @@ import TheContact from './components/TheContact.vue'
 import TheFooter from './components/TheFooter.vue'
 </script>
 
-<style scoped>
-#nav {
+<style scoped lang="scss">
+.nav {
     position: fixed;
     z-index: 4;
 }

@@ -1,5 +1,5 @@
 <template>
-    <div id="portfolio">
+    <div class="portfolio">
         <h2>Portfolio</h2>
         <div class="row row-cols-1 row-cols-sm-2">
             <div class="col" v-for="project in projects">
@@ -77,7 +77,7 @@ const getIconSrc = (tech: string) => {
 </script>
 
 <style lang="scss" scoped>
-#portfolio {
+.portfolio {
     padding-left: 10%;
     margin-top: 3em;
 

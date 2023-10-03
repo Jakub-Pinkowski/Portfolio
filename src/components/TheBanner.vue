@@ -1,5 +1,5 @@
 <template>
-    <div id="home" class="banner">
+    <div class="banner">
         <div class="intro">
             <h1 class="heading ma-0 pa-0">{{ heading1 }}</h1>
             <h2 class="secondary-text">{{ heading2 }}</h2>

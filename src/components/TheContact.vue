@@ -1,5 +1,5 @@
 <template>
-    <div id="contact">
+    <div class="contact">
         <h2>{{ heading_contact }}</h2>
         <div class="contact-form">
             <div class="text">
@@ -113,7 +113,7 @@ const resetForm = () => {
 </script>
 
 <style lang="scss" scoped>
-#contact {
+.contact {
     padding-left: 10%;
     margin-top: 3em;
 

@@ -1,5 +1,5 @@
 <template>
-    <div id="about">
+    <div class="about">
         <div class="text">
             <h2>{{ heading_about }}</h2>
             <p>{{ hello }}</p>
@@ -18,14 +18,14 @@ import my_photo from '../assets/images/my-photo.jpg'
 const heading_about = 'About me'
 const hello = 'Hello World!'
 const paragraph1 =
-    " I'm Jakub, a self-taught developer with a genuine passion for programming. I have a strong background in both back-end and front-end development, enabling me to create comprehensive and dynamic web applications."
+    " I'm Jakub, a self-taught developer with a genuine passion for programming. I have a strong background in both front-end and back-end development, enabling me to create comprehensive and dynamic web applications."
 
 const paragaph2 =
     'Welcome to my personal portfolio, where you can explore my projects and dedication to creating high-quality software solutions.'
 </script>
 
 <style lang="scss" scoped>
-#about {
+.about {
     padding-left: 10%;
     display: flex;
     align-items: stretch;
