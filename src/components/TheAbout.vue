@@ -68,8 +68,9 @@ const paragaph2 =
 
         img {
             width: 80%;
-            height: 80%;
+            height: auto;
             object-fit: contain;
+            border-radius: 5%;
         }
     }
 }
