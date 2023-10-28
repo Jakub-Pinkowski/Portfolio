@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 
 import image_jules_art from '@/assets/images/jules-art.jpg'
-import image_habit_tracker from '@/assets/images/habit-tracker.png'
+import image_habit_tracker from '@/assets/images/habit-tracker.jpg'
 import image_coach from '@/assets/images/coach.jpg'
 import weather_app from '@/assets/images/weather-app.png'
 import travel_blog from '@/assets/images/travel-blog.jpg'
@@ -9,6 +9,7 @@ import todo from '@/assets/images/todo.jpg'
 import blogging_platform from '@/assets/images/blogging-platform.jpg'
 import meals from '@/assets/images/meals.jpg'
 import social_media from '@/assets/images/social-media.jpg'
+import investment_calculator from '@/assets/images/investment-calculator.jpg'
 
 export const useProjectsStore = defineStore({
     id: 'projectsStore',
@@ -113,7 +114,7 @@ export const useProjectsStore = defineStore({
             },
             {
                 id: 9,
-                name: 'Find a Coach',
+                name: 'Coaching Platform',
                 src: 'https://vue-udemy-section16.web.app',
                 img: image_coach,
                 description:
@@ -121,6 +122,17 @@ export const useProjectsStore = defineStore({
                 technologiesDescription: 'Built with Vue.js, JS, HTML, CSS and Firebase.',
                 technologies: ['vue', 'js', 'html', 'css', 'firebase'],
                 github: 'https://github.com/Jakub-Pinkowski/vue-udemy',
+            },
+            {
+                id: 10,
+                name: 'Investment Calculator',
+                src: 'https://investment-calculator-28479.web.app',
+                img: investment_calculator,
+                description:
+                    'Investment calculator that allows you to calculate your investment income.',
+                technologiesDescription: 'Built with React, JS, HTML, CSS and Firebase.',
+                technologies: ['react', 'js', 'html', 'css', 'firebase'],
+                github: 'https://github.com/Jakub-Pinkowski/investment-calculator',
             },
         ],
     }),
