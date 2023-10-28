@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 import image_jules_art from '@/assets/images/jules-art.jpg'
 import image_habit_tracker from '@/assets/images/habit-tracker.png'
-import image_coach from '@/assets/images/coach.webp'
+import image_coach from '@/assets/images/coach.jpg'
 import weather_app from '@/assets/images/weather-app.png'
 import travel_blog from '@/assets/images/travel-blog.jpg'
 import todo from '@/assets/images/todo.jpg'
