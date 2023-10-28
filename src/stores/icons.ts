@@ -13,6 +13,9 @@ import githubIcon from '../assets/icons/github.png'
 import globe from '../assets/icons/globe.png'
 import tailwind from '../assets/icons/tailwind.png'
 import sass from '../assets/icons/sass.png'
+import react from '../assets/icons/react.png'
+import next from '../assets/icons/next.png'
+import vercel from '../assets/icons/vercel.png'
 
 export const useIconsStore = defineStore({
     id: 'iconsStore',
@@ -69,6 +72,18 @@ export const useIconsStore = defineStore({
             {
                 name: 'sass',
                 src: sass,
+            },
+            {
+                name: 'react',
+                src: react,
+            },
+            {
+                name: 'next',
+                src: next,
+            },
+            {
+                name: 'vercel',
+                src: vercel,
             },
         ],
     }),

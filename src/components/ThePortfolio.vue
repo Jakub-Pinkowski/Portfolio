@@ -18,9 +18,7 @@
                                 :alt="tech"
                             />
                         </p>
-                        <div
-                            class="d-flex justify-content-between align-items-center"
-                        >
+                        <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <a
                                     :href="project.src"
@@ -28,11 +26,7 @@
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <img
-                                        class="icon"
-                                        :src="getIconSrc('globe')"
-                                        alt="globe icon"
-                                    />
+                                    <img class="icon" :src="getIconSrc('globe')" alt="globe icon" />
                                     Visit Website
                                 </a>
 
