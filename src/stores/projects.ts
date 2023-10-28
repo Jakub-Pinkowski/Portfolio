@@ -8,6 +8,7 @@ import travel_blog from '@/assets/images/travel-blog.jpg'
 import todo from '@/assets/images/todo.jpg'
 import blogging_platform from '@/assets/images/blogging-platform.jpg'
 import meals from '@/assets/images/meals.jpg'
+import social_media from '@/assets/images/social-media.jpg'
 
 export const useProjectsStore = defineStore({
     id: 'projectsStore',
@@ -37,6 +38,27 @@ export const useProjectsStore = defineStore({
             },
             {
                 id: 3,
+                name: 'Social Media App',
+                src: 'https://social-media-sigma-topaz.vercel.app/api/auth/signin',
+                img: social_media,
+                description:
+                    'Social media app that allows you to create an account, view other users and blog posts',
+                technologiesDescription:
+                    'Built with React, Next, TS, Prisma, PostgreSQL HTML, CSS and Vercel.',
+                technologies: [
+                    'react',
+                    'next',
+                    'ts',
+                    'prisma',
+                    'postgresql',
+                    'html',
+                    'css',
+                    'vercel',
+                ],
+                github: 'https://github.com/Jakub-Pinkowski/Social-Media',
+            },
+            {
+                id: 4,
                 name: 'Habit Tracker',
                 src: 'http://pinkowskijakub.eu.pythonanywhere.com',
                 img: image_habit_tracker,
@@ -46,18 +68,7 @@ export const useProjectsStore = defineStore({
                 technologies: ['python', 'sqlite', 'js', 'html', 'css'],
                 github: 'https://github.com/Jakub-Pinkowski/cs50_final_project',
             },
-            {
-                id: 4,
-                name: 'Weather App',
-                src: 'https://weather-app-11d00.web.app',
-                img: weather_app,
-                description:
-                    'Weather app that allows you to check the weather in your city and add it to your favourites.',
-                technologiesDescription:
-                    'Built with Vue.js, TS, HTML, CSS (Tailwind) and Firebase.',
-                technologies: ['vue', 'ts', 'html', 'css', 'tailwind', 'firebase'],
-                github: 'https://github.com/Jakub-Pinkowski/Weather-App',
-            },
+
             {
                 id: 5,
                 name: 'Meals App',
@@ -70,13 +81,15 @@ export const useProjectsStore = defineStore({
             },
             {
                 id: 6,
-                name: 'TODO App',
-                src: 'https://todo-app-5ce36.web.app',
-                img: todo,
-                description: 'Simple TODO app that allows you to add, edit and delete your tasks.',
-                technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
-                technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
-                github: 'https://github.com/Jakub-Pinkowski/Todo-App',
+                name: 'Weather App',
+                src: 'https://weather-app-11d00.web.app',
+                img: weather_app,
+                description:
+                    'Weather app that allows you to check the weather in your city and add it to your favourites.',
+                technologiesDescription:
+                    'Built with Vue.js, TS, HTML, CSS (Tailwind) and Firebase.',
+                technologies: ['vue', 'ts', 'html', 'css', 'tailwind', 'firebase'],
+                github: 'https://github.com/Jakub-Pinkowski/Weather-App',
             },
             {
                 id: 7,
@@ -89,7 +102,17 @@ export const useProjectsStore = defineStore({
                 github: 'https://github.com/Jakub-Pinkowski/Travel-Blog',
             },
             {
-                id: 5,
+                id: 8,
+                name: 'TODO App',
+                src: 'https://todo-app-5ce36.web.app',
+                img: todo,
+                description: 'Simple TODO app that allows you to add, edit and delete your tasks.',
+                technologiesDescription: 'Built with Vue.js, TS, HTML, CSS and Firebase.',
+                technologies: ['vue', 'ts', 'html', 'css', 'firebase'],
+                github: 'https://github.com/Jakub-Pinkowski/Todo-App',
+            },
+            {
+                id: 9,
                 name: 'Find a Coach',
                 src: 'https://vue-udemy-section16.web.app',
                 img: image_coach,

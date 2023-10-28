@@ -16,6 +16,8 @@ import sass from '../assets/icons/sass.png'
 import react from '../assets/icons/react.png'
 import next from '../assets/icons/next.png'
 import vercel from '../assets/icons/vercel.png'
+import prisma from '../assets/icons/prisma.png'
+import postgresql from '../assets/icons/postgresql.png'
 
 export const useIconsStore = defineStore({
     id: 'iconsStore',
@@ -84,6 +86,14 @@ export const useIconsStore = defineStore({
             {
                 name: 'vercel',
                 src: vercel,
+            },
+            {
+                name: 'prisma',
+                src: prisma,
+            },
+            {
+                name: 'postgresql',
+                src: postgresql,
             },
         ],
     }),
