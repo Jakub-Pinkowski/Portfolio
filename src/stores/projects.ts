@@ -32,32 +32,32 @@ export const useProjectsStore = defineStore({
                 src: 'https://blogging-platform-steel.vercel.app',
                 img: blogging_platform,
                 description:
-                    "A blogging platform where you can view and like all users' posts, create your own account, and manage your own posts",
-                technologiesDescription: 'Built with React, Next, JS, HTML, CSS and Vercel.',
-                technologies: ['react', 'next', 'js', 'html', 'css', 'vercel'],
+                    "Blogging platform where you can view and like all users' posts, create your own account, and manage your own posts",
+                technologiesDescription: 'Built with React, Next, JS, HTML, CSS, Firebase and Vercel.',
+                technologies: ['react', 'next', 'js', 'html', 'css', 'firebase', 'vercel'],
                 github: 'https://github.com/Jakub-Pinkowski/Blogging-Platform',
             },
-            {
-                id: 3,
-                name: 'Social Media App',
-                src: 'https://social-media-sigma-topaz.vercel.app/api/auth/signin',
-                img: social_media,
-                description:
-                    'Social media app that allows you to create an account, view other users and blog posts',
-                technologiesDescription:
-                    'Built with React, Next, TS, Prisma, PostgreSQL HTML, CSS and Vercel.',
-                technologies: [
-                    'react',
-                    'next',
-                    'ts',
-                    'prisma',
-                    'postgresql',
-                    'html',
-                    'css',
-                    'vercel',
-                ],
-                github: 'https://github.com/Jakub-Pinkowski/Social-Media',
-            },
+            // {
+            //     id: 3,
+            //     name: 'Social Media App',
+            //     src: 'https://social-media-sigma-topaz.vercel.app/api/auth/signin',
+            //     img: social_media,
+            //     description:
+            //         'Social media app that allows you to create an account, view other users and blog posts',
+            //     technologiesDescription:
+            //         'Built with React, Next, TS, Prisma, PostgreSQL HTML, CSS and Vercel.',
+            //     technologies: [
+            //         'react',
+            //         'next',
+            //         'ts',
+            //         'prisma',
+            //         'postgresql',
+            //         'html',
+            //         'css',
+            //         'vercel',
+            //     ],
+            //     github: 'https://github.com/Jakub-Pinkowski/Social-Media',
+            // },
             {
                 id: 4,
                 name: 'Habit Tracker',
