@@ -18,6 +18,8 @@ import next from '../assets/icons/next.png'
 import vercel from '../assets/icons/vercel.png'
 import prisma from '../assets/icons/prisma.png'
 import postgresql from '../assets/icons/postgresql.png'
+import svelte from '../assets/icons/svelte.png'
+import sveltekit from '../assets/icons/sveltekit.png'
 
 export const useIconsStore = defineStore({
     id: 'iconsStore',
@@ -94,6 +96,14 @@ export const useIconsStore = defineStore({
             {
                 name: 'postgresql',
                 src: postgresql,
+            },
+            {
+                name: 'svelte',
+                src: svelte,
+            },
+            {
+                name: 'sveltekit',
+                src: sveltekit,
             },
         ],
     }),

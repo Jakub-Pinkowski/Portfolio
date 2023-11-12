@@ -10,6 +10,7 @@ import blogging_platform from '@/assets/images/blogging-platform.jpg'
 import meals from '@/assets/images/meals.jpg'
 import social_media from '@/assets/images/social-media.jpg'
 import investment_calculator from '@/assets/images/investment-calculator.jpg'
+import links_page from '@/assets/images/links-page.jpg'
 
 export const useProjectsStore = defineStore({
     id: 'projectsStore',
@@ -33,7 +34,8 @@ export const useProjectsStore = defineStore({
                 img: blogging_platform,
                 description:
                     "Blogging platform where you can view and like all users' posts, create your own account, and manage your own posts",
-                technologiesDescription: 'Built with React, Next, JS, HTML, CSS, Firebase and Vercel.',
+                technologiesDescription:
+                    'Built with React, Next, JS, HTML, CSS, Firebase and Vercel.',
                 technologies: ['react', 'next', 'js', 'html', 'css', 'firebase', 'vercel'],
                 github: 'https://github.com/Jakub-Pinkowski/Blogging-Platform',
             },
@@ -58,6 +60,27 @@ export const useProjectsStore = defineStore({
             //     ],
             //     github: 'https://github.com/Jakub-Pinkowski/Social-Media',
             // },
+            {
+                id: 3,
+                name: 'Links Page',
+                src: 'https://links-page-rosy.vercel.app',
+                img: links_page,
+                description:
+                    'Links page that allows you to create an account, add your links to social media and share them with others. Inspired by Linktree',
+                technologiesDescription:
+                    'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, Firebase and Vercel.',
+                technologies: [
+                    'svelte',
+                    'sveltekit',
+                    'ts',
+                    'html',
+                    'css',
+                    'tailwind',
+                    'firebase',
+                    'vercel',
+                ],
+                github: 'https://github.com/Jakub-Pinkowski/links-page',
+            },
             {
                 id: 4,
                 name: 'Habit Tracker',

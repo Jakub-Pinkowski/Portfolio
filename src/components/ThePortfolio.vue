@@ -141,6 +141,7 @@ const getIconSrc = (tech: string) => {
                 width: 40px;
                 height: 40px;
                 padding: 0.2em;
+                object-fit: contain;
             }
 
             .btn-group {
