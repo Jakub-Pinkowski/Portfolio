@@ -33,7 +33,7 @@ export const useProjectsStore = defineStore({
                 src: 'https://blogging-platform-steel.vercel.app',
                 img: blogging_platform,
                 description:
-                    "Blogging platform where you can view and like all users' posts, create your own account, and manage your own posts",
+                    "Blogging platform where you can view and like all users' posts, create your own account, and manage your own posts.",
                 technologiesDescription:
                     'Built with React, Next, JS, HTML, CSS, Firebase and Vercel.',
                 technologies: ['react', 'next', 'js', 'html', 'css', 'firebase', 'vercel'],
@@ -66,7 +66,7 @@ export const useProjectsStore = defineStore({
                 src: 'https://links-page-rosy.vercel.app',
                 img: links_page,
                 description:
-                    'Links page that allows you to create an account, add your links to social media and share them with others. Inspired by Linktree',
+                    'Links page that allows you to create an account, add your links to social media and share them with others. Inspired by Linktree.',
                 technologiesDescription:
                     'Built with Svelte, SvelteKit, TS, HTML, CSS, Tailwind, Firebase and Vercel.',
                 technologies: [
